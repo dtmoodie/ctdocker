@@ -1,4 +1,5 @@
 all:
+	(rm -rf build/ct)
 	(cp -r ../ct build/)
-	(cd base; sudo docker build -t ct:14.04 .)
-	(cd build; sudo docker build . --no-cache)
+	(cd base; docker build -t ct:14.04 .)
+	(cd build; docker build . --no-cache)

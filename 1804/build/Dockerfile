@@ -1,4 +1,4 @@
-from ct:16.04
+from ct:18.04
 
 COPY ct ct
 RUN cd ct && mkdir build && cd build && cmake .. && make
